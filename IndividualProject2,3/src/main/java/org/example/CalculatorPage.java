@@ -69,7 +69,7 @@ public class CalculatorPage{
     @FindBy(xpath="//div[contains (text(),'Instance type: n1-standard-8')]")
     WebElement instanceData;
     @FindBy(xpath="//div[contains (text(),'Local SSD: 2x375 GiB')]")
-   WebElement ssdData;
+    WebElement ssdData;
     @FindBy(xpath="//b[contains(text(),'Total Estimated Cost:')]")
     WebElement amount;
 
@@ -94,10 +94,10 @@ public class CalculatorPage{
     }
     public void ManageCookie() throws InterruptedException {
 
-            if (cookiesOkBtn.isDisplayed()) {
-                cookiesOkBtn.click();
-                Thread.sleep(1000);
-            }
+        if (cookiesOkBtn.isDisplayed()) {
+            cookiesOkBtn.click();
+            Thread.sleep(1000);
+        }
 
 
 
@@ -164,12 +164,12 @@ public class CalculatorPage{
         return instance;
     }
     public WebElement getSsdData(){
-       WebElement ssd=ssdData;
-         return ssd;
+        WebElement ssd=ssdData;
+        return ssd;
     }
     public WebElement getCost(){
         WebElement price=amount;
-                return price;
+        return price;
     }
 
 
